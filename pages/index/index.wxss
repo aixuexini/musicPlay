@@ -1,0 +1,46 @@
+/**index.wxss**/
+.banner{
+  width: 730rpx;
+  border: 1px solid rgb(172, 211, 233);
+  border-radius: 3px;
+}
+.banner image{
+  width: 730rpx;
+}
+.top{
+  margin-top: 10rpx;
+  border-top: .5px dotted #666;
+}
+.subject{
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #666;
+  padding: 10rpx;
+}
+.yunTop{
+  margin-top: 20rpx;
+  border:.5px solid #000;
+  border-radius: 3px;
+  border-shadow:2px 2px 2px 2px #999;
+  background-color:rgba(203, 203, 216,0.2);
+  display: flex;
+  align-items: center;
+}
+.topItem{
+  flex:4;
+  padding:20rpx;
+}
+.topTitle{
+ font-size: 30rpx;
+ font-weight: bold;
+ padding-bottom: 10rpx;
+}
+.topSong>view{
+  margin-top: 8rpx;
+  font-size: 28rpx;
+}
+.topImage{
+  flex:2.5;
+  padding: 5rpx;
+  height: 260rpx;
+}

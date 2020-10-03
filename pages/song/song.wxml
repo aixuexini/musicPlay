@@ -1,0 +1,14 @@
+<view class="songs">
+  <image src="/images/yinyue.jpg" class="bgimage"></image>
+  <!--当前为停止状态  -->
+  <view wx:if="{{isplay==false}}" bindtap='play'>
+    <image class="isplayImage" src='/images/play.png' />
+  </view>
+  <!--当前为播放状态  -->
+  <view wx:if="{{isplay==true}}" bindtap='stop'>
+    <image class="isplayImage"  src='/images/pause.png' />
+  </view>
+</view>
+<view class="reviewPlay">
+  <button bindtap='review' type='primary'>重新播放</button>
+</view>

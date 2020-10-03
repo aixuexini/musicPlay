@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view class="playSong">
+  <view wx:for="{{tracks}}" wx:key="index" >
+    <navigator class="playItem" url="/pages/song/song?id={{item.id}}">
+      <view class="itemMsg">
+        <!-- 获取歌单 -->
+        <view class="playName">{{index+1}}.{{item.name}}</view>
+        <!-- 获取作者 -->
+        <view class="playAuthor">{{item.ar[0].name}}-{{item.name}}</view>
+      </view>
+      <image class="songImage" src="/images/song.png"></image>
+    </navigator>
+  </view>
+</view>

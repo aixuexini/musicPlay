@@ -1,0 +1,26 @@
+/* pages/detail/detail.wxss */
+.playSong{
+  padding: 20rpx;
+  background-color:rgba(170, 170, 255, .2);
+}
+.playItem{
+  margin: 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+.itemMsg{
+  flex: 7;
+}
+.playName{
+  font-size: 28rpx;
+  font-weight: bold;
+  color:#333;
+}
+.playAuthor{
+  font-size: 22rpx;
+  padding-left: 5px;
+}
+.songImage{
+  width: 22px;
+  height: 22px;
+}

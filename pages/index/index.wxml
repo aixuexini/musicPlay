@@ -1,0 +1,45 @@
+<view class="container">
+  <!-- 首页轮播图开始 -->
+  <view class="banner">
+    <swiper autoplay="true" 
+      indicator-dots="true"
+      indicator-color="#fff"
+      indicator-active-color="#0aa1eb"
+      circular="true"
+      interval="5000"
+      duration="500"
+    >
+      <view wx:for="{{banner}}"   wx:key="index">
+        <swiper-item><image src="{{item.imageUrl}}" mode="heightFix">{{index}}</image></swiper-item>
+      </view>
+    </swiper>
+  </view>
+  <!-- 首页轮播图结束 -->
+  <!-- 音乐分类列表开始 -->
+  <text class="subject">音乐巅峰榜</text>
+  <view class="top">
+    <view wx:for="{{songs}}" wx:key="index"
+    >
+      <!-- 云音乐榜单开始 -->
+      <!-- <navigator > -->
+        <navigator url="/pages/detail/detail?id={{item.id}}" open-type="navigate">
+        <view wx:if="{{index<=6}}" class="yunTop">
+          <view class="topItem">
+              <view class="topTitle">{{item.name}}</view>
+              <view class="topSong">  
+                <view>{{1}}.{{item.tracks[0].name}}--{{item.tracks[0].ar[0].name}}</view>
+                <view>{{2}}.{{item.tracks[1].name}}--{{item.tracks[1].ar[0].name}}</view>
+                <view>{{3}}.{{item.tracks[2].name}}--{{item.tracks[2].ar[0].name}}</view> 
+              </view>
+            </view>            
+            <image mode="heightFix" class="topImage" src="{{item.coverImgUrl}}"></image>
+        </view>
+      </navigator> 
+      <!-- 云音乐榜单结束 -->  
+    </view> 
+  </view>
+  <!-- 音乐分类列表结束 -->
+</view>
+
+
+

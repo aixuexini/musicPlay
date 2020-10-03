@@ -1,0 +1,21 @@
+<view class="box">
+ <view class="newMv">最新MV大放送</view>
+ <view wx:if="{{video}}">
+    <view wx:for="{{video}}" wx:key="index" class="mvItem">
+      <view class="mvCover" >
+        <!-- 视频展示 -->
+        <video 
+          class="mvImage"  
+          src="{{item.url}}" 
+          poster="{{item.cover}}"
+          controls="true"
+          bindtap="changeStatus"
+          ></video>
+        <!-- <image class="btnPlay" src="/images/play.png"></image> -->
+        <view><image src="/images/play.png"></image>{{item.playCount}}</view>
+      </view>
+      <view class="mvName">{{item.name}}->{{item.artistName}}</view>
+      <view class="mvArtist"></view>
+    </view>
+  </view>
+</view>

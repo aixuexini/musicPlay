@@ -1,0 +1,19 @@
+.songs{
+  width: 730rpx;
+  margin: 0 auto;  
+  position: relative;
+}
+.bgimage{
+  width: 730rpx;
+  text-align: center;
+
+}
+.isplayImage{
+  position:absolute;
+  left: 50%;
+  bottom:50%;
+  margin-left: -14px;
+  margin-top:-14px;
+  width: 28px;
+  height: 28px;
+}

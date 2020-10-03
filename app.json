@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/video/video",
+    "pages/detail/detail",
+    "pages/song/song"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#aaf",
+    "navigationBarTitleText": "音乐馆",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true 
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#0aa1eb",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "音乐",
+      "iconPath": "/images/index_disabled.png",
+      "selectedIconPath": "/images/index_enabled.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "音乐MV",
+        "iconPath": "/images/cart_disabled.png",
+        "selectedIconPath": "/images/cart_enabled.png"
+      } 
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
